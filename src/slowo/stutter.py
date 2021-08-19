@@ -12,7 +12,7 @@ def stutter(strength: float, input_string: str):
 
 def replace(match, strength = 0.0):
     match_string = match.string[slice(*match.span())]
-    if random.uniform(0, 1) < strength:
+    if random.random() < strength:
         char = match_string[-1]
         return f"{match_string}-{char}"
     return match_string
