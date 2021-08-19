@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 WORD_HASH = {
     "small": "smol",
     "cute": "kawaii~",
@@ -15,3 +16,7 @@ def word_replace(input_string: str) -> str:
         input_string = input_string.replace(word, WORD_HASH[word])
 
     return input_string
+
+def char_replace(input_string: str) -> str:
+    return input_string.replace("r", "w").replace("l", "w")
+
