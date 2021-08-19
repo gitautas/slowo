@@ -8,7 +8,7 @@ setup(
     license="GPLv3",
     author='Gintautas Kazlauskas',
     author_email='gintautaskazlauskas@protonmail.com',
-    url="uwu.lt",
+    url="https://www.github.com/gitautas/slowo",
     package_dir = {
         "": "src"
     },

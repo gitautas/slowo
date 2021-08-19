@@ -1,6 +1,6 @@
 import slowo
 
-slowo.UwU.ify(
+print(slowo.UwU.ify(
 """
 Tribal Viets inhabiting the Red River delta entered written history when China’s southward expansion reached them in the 3rd century bce. From that time onward, a dominant theme of Vietnam’s history has been interaction with China, the source of most of Vietnam’s high culture. As a tribute-paying state after throwing off Chinese rule in 938 ce, Vietnam sent lacquerware, animal skins, ivory, and tropical products to the Chinese emperor and received scrolls on philosophy, administration, and literature in return. Sinic culture seeped deeply into society, but it shaped the aristocracy and mandarinal families more than it did the peasantry, which preserved distinctive customs, beliefs, vocabulary, lifeways, and gender relations. Modeling themselves on Chinese emperors, Vietnam’s kings exacted tribute from ethnic minorities on the periphery of the Vietnamese state and called themselves emperors when not addressing the Chinese court. Although cultural and spatial gaps between the Vietnamese court and the farthest reaches of society were not as great as they were in China (Vietnam is about the size of a Chinese province, with a comparable population), the Vietnamese state’s capacity to rule diminished with distance from the capital. The refractory character of bamboo-hedged peasant communes was captured in the cliché, "The emperor’s writ stops at the village gate."
-""")
+"""))

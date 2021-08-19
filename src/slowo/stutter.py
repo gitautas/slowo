@@ -9,7 +9,6 @@ subst = "\\g<1>\\g<2>-\\g<2>"
 def stutter(strength: float, input_string: str):
         return uwugex.sub(partial(replace, strength=strength), input_string, 0)
 
-
 def replace(match, strength = 0.0):
     match_string = match.string[slice(*match.span())]
     if random.random() < strength:

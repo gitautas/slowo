@@ -10,6 +10,7 @@ WORD_HASH = {
     "idiot": "baka",
     "what": "nani",
     "meow": "nya~",
+    "roar": "rawrr~",
 }
 
 uwugex = re.compile(r"(?<![wrl])[lr](?![wrl])") # Laundmo certified UwUgex
