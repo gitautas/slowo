@@ -12,10 +12,7 @@ setup(
    author='Gintautas Kazlauskas',
    author_email='gintautaskazlauskas@protonmail.com',
    url="uwu.lt",
-   packages=['foo'],  #same as name
-   install_requires=['wheel', 'bar', 'greek'], #external packages as dependencies
-   scripts=[
-            'scripts/cool',
-            'scripts/skype',
-           ]
+   packages=['slowo'],  #same as name
+   install_requires=['wheel'], #external packages as dependencies
+   scripts=[]
 )
