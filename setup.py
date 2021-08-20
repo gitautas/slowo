@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='slowo',
-    version='0.2',
+    version='0.3',
     description='A python implentación of advanced uwuification.',
     license="GPLv3",
     author='Gintautas Kazlauskas',

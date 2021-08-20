@@ -38,7 +38,7 @@ EMOJI_LUT = [
     "(✿oωo)",
 ]
 
-punctuation_regex = re.compile(r"[\.!\?;\s]+")
+punctuation_regex = re.compile(r"\s+")
 
 def emoji(strength: float, input_string: str):
         return punctuation_regex.sub(partial(replace, strength=strength), input_string, 0)
@@ -47,6 +47,6 @@ def emoji(strength: float, input_string: str):
 def replace(match, strength = 0.0):
     match_string = match.string[slice(*match.span())]
     if random.random() < strength:
-        return f"{match_string} " + EMOJI_LUT[random.randint(0, len(EMOJI_LUT) - 1)] + " "
+        return f" {EMOJI_LUT[random.randint(0, len(EMOJI_LUT) - 1)]} "
 
     return match_string
