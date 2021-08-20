@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from .wepwace import word_replace ,char_replace
+from .wepwace import word_replace, char_replace
 from .nya import nyaify
 from .stutter import stutter
 from .emoji import emoji

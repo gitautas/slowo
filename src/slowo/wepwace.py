@@ -13,7 +13,7 @@ WORD_HASH = {
     "roar": "rawrr~",
 }
 
-uwugex = re.compile(r"(?<![wrl])[lr](?![wrl])") # Laundmo certified UwUgex
+uwugex = re.compile(r"(?<![w])[lr](?![w])") # Updated UwUgex
 
 def word_replace(input_string: str) -> str:
     for word in WORD_HASH: # Python sucks because Verboof doesn't let me do what I want :c
