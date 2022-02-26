@@ -3,7 +3,7 @@ import random
 import re
 from functools import partial
 
-EMOJI_LUT = [
+EMOJIS = [
     "rawr x3",
     "OwO",
     "UwU",
@@ -48,6 +48,6 @@ def emoji(strength: float, input_string: str):
 def replace(match, strength=0.0):
     match_string = match.string[slice(*match.span())]
     if random.random() < strength:
-        return f" {EMOJI_LUT[random.randint(0, len(EMOJI_LUT) - 1)]} "
+        return f" {random.choice(EMOJIS)} "
 
     return match_string
