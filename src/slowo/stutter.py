@@ -4,7 +4,7 @@ import re
 from functools import partial
 
 uwugex = re.compile(r"(\s)([a-zA-Z])")
-subst = "\\g<1>\\g<2>-\\g<2>"
+subst = r"\1\2-\2"
 
 
 def stutter(strength: float, input_string: str):

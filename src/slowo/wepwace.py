@@ -13,7 +13,7 @@ WORD_HASH = {
     "roar": "rawrr~",
 }
 
-uwugex = re.compile(r"(?<![w])[lr](?![w])")  # Updated UwUgex
+uwugex = re.compile(r"(?<!w)[lr](?!w)")  # Updated UwUgex
 
 
 def word_replace(input_string: str) -> str:
