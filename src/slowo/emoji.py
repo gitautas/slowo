@@ -21,7 +21,7 @@ EMOJI_LUT = [
     "( ͡o ω ͡o )",
     "ʘwʘ",
     ":3",
-    ":3", # important enough to have twie
+    ":3",  # important enough to have twie
     "XD",
     "nyaa~~",
     "mya",
@@ -40,11 +40,12 @@ EMOJI_LUT = [
 
 punctuation_regex = re.compile(r"\s+")
 
+
 def emoji(strength: float, input_string: str):
-        return punctuation_regex.sub(partial(replace, strength=strength), input_string, 0)
+    return punctuation_regex.sub(partial(replace, strength=strength), input_string, 0)
 
 
-def replace(match, strength = 0.0):
+def replace(match, strength=0.0):
     match_string = match.string[slice(*match.span())]
     if random.random() < strength:
         return f" {EMOJI_LUT[random.randint(0, len(EMOJI_LUT) - 1)]} "
