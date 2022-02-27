@@ -1,0 +1,18 @@
+[project]
+name = "slowo"
+version = "0.3"
+description = "A python implentación of advanced uwuification."
+license = { file = "LICENSE" }
+authors = [{ name = "Gintautas Kazlauskas", email = "gintautaskazlauskas@protonmail.com" }]
+requires-python = ">=3.5"
+dependencies = []
+
+[project.urls]
+homepage = "https://www.github.com/gitautas/slowo"
+repository = "https://www.github.com/gitautas/slowo"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"

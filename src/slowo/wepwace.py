@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import re
 
-WORD_HASH = {
+WORDS = {
     "small": "smol",
     "cute": "kawaii~",
     "fluff": "floof",
@@ -13,14 +13,15 @@ WORD_HASH = {
     "roar": "rawrr~",
 }
 
-uwugex = re.compile(r"(?<![w])[lr](?![w])") # Updated UwUgex
+uwugex = re.compile(r"(?<!w)[lr](?!w)")  # Updated UwUgex
+
 
 def word_replace(input_string: str) -> str:
-    for word in WORD_HASH: # Python sucks because Verboof doesn't let me do what I want :c
-        input_string = input_string.replace(word, WORD_HASH[word])
+    for word, changed_word in WORDS.items():
+        input_string = input_string.replace(word, changed_word)
 
     return input_string
 
+
 def char_replace(input_string: str) -> str:
     return uwugex.sub("w", input_string)
-
